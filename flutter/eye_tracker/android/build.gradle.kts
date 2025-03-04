@@ -1,7 +1,14 @@
+import org.gradle.api.Action
+import org.gradle.api.Task
+import org.gradle.api.tasks.TaskContainer
+
 allprojects {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://seeso.jfrog.io/artifactory/visualcamp-seeso-android-gradle-release/")
+        }
     }
 }
 
